@@ -10,3 +10,6 @@
 
 wrong = False
 right = True
+
+if wrong or right == True and right is not False:
+    print("Yes")
