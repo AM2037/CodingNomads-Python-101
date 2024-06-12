@@ -32,23 +32,34 @@
 
 flag = True
 
+#  First left
 if flag == True:
     print("left")
+
+# Keep straight
+flag = False
 
 if flag == False:
     print("straight ahead")
 
+# Go right
 if flag == True:
     print("left")
+
+flag = True
 
 if flag == False:
     print("straight ahead")
 
+flag = False 
+
 if flag == True:
     print("straight ahead")
 
 if flag == True:
     print("straight ahead")
+
+flag = False
 
 if flag == True:
     print("DEAD END")
@@ -65,6 +76,9 @@ if flag == True:
 if flag == False:
     print("straight ahead")
 
+# Get rid of dead end
+flag = True 
+
 if flag == False:
     print("DEAD END")
 
@@ -73,6 +87,9 @@ if flag == True:
 
 if flag == True:
     print("straight ahead")
+
+# Want straight to exit
+flag = False
 
 if flag == True:
     print("left")

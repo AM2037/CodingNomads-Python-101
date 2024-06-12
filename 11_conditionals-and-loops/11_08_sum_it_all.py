@@ -6,3 +6,8 @@
 
 start = 1
 stop = 100
+
+# Sum all numbers in range
+add_nums = sum(range(start, stop+1))
+# Convert int to str for proper concatenation while printing
+print("The sum is: " + str(add_nums)) 

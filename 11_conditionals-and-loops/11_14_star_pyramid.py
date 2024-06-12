@@ -22,3 +22,12 @@
 # * * *
 #
 # HINT: Think of nested for loops!
+
+# Prompt user for height of pyramid
+height = int(input("Enter pyramid height: "))
+
+# Nested for loops to create half pyramid
+for i in range(height):
+    for j in range(i+1):
+        print("*", end="")
+    print()
