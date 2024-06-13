@@ -3,12 +3,14 @@
 #
 # String input: hello world
 # Letter input: o
+# Result: 4
  
 # Prompt user for string of words
 words = input("Please enter random sentence here: ")
 letter = input("Please type one letter from previous sentence here: ")
 
+# Get index of first occurrence of letter in word
 result = words.index(letter)
 
-print(f"Result: " + {result}) 
-# TODO: Fix TypeError: can only concatenate str (not "set") to string
+# Convert index (int) to str
+print("Result: " + str(result))
