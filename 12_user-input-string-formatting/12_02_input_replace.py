@@ -15,11 +15,16 @@ sym = input("Please enter a symbol: ")
 first = words[0]
 
 # Find all occurrences of the first letter
-print([i for i, x in enumerate(words) if x == first])
+all_occ = [i for i, x in enumerate(words) if x == first]
 
+# Replace all occurrences of first letter with provided symbol
+chars = list(words)
 
+for idx in all_occ:
+    chars[idx] = sym
 
-
+sym_words = ''.join(chars)
+print(sym_words)
 
         
 
