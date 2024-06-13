@@ -3,7 +3,6 @@
 #
 # String input: hello world
 # Letter input: o
-# Result: 4
  
 # Prompt user for string of words
 words = input("Please enter random sentence here: ")
