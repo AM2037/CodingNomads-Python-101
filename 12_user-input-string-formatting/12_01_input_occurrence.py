@@ -5,4 +5,11 @@
 # Letter input: o
 # Result: 4
  
-# testing vscode git branch
+# Prompt user for string of words
+words = input("Please enter random sentence here: ")
+letter = input("Please type one letter from previous sentence here: ")
+
+result = words.index(letter)
+
+print(f"Result: " + {result}) 
+# TODO: Fix TypeError: can only concatenate str (not "set") to string
