@@ -10,7 +10,11 @@ name_length = len(name)
 # Find # of spaces aka seperator between words
 spaces = len(re.findall(r'\s+', name))
 
+# If a user enters more than one name, e.g. "firstname lastname",
+# then use only their first name to overstep some personal boundaries
+# in your welcome message.
 if (spaces + 1) == 1:
-    print("Only first name given")
+    print(f"Welcome, {name}!")
 else: 
-    print("This is a first and last name.")
+    first_name = name.split(" ")[0]
+    print(f"Welcome, {first_name}!")
