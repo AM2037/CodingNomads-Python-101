@@ -9,9 +9,24 @@ vowels = "aeiou"
 
 def count_vowels(input_string, vowels):
 
-# Trying comprehension instead
+# Trying comprehension instead for overall vowel count
     vowel_counter = [char for char in input_string if char in vowels]
     total_count = len(vowel_counter)
     print(f"The total number of vowels is: {total_count}")
 
 count_vowels(input_string, vowels)
+
+freq = {}.fromkeys(vowels, 0)
+
+def vowel_freq(input_string, vowels):
+    # Get frequency of only vowels
+    for char in input_string:
+        if char in vowels:
+            freq[char] += 1
+        else:
+            freq[char] = 1
+
+    return freq
+
+frequency = vowel_freq(input_string, vowels)
+print(f"The total number of times each vowel appears is: {frequency}")
