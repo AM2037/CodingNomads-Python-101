@@ -4,16 +4,14 @@
 # Prompt user for a sentence
 input_string = str(input("Please enter any sentence here."))
 
-# Initialize vowel counter
-vowel_count = 0
-vowels = ['a', 'e', 'i', 'o', 'u']
+# Declare vowels
+vowels = "aeiou"
 
-def count_vowels(char, vowels): #could change to match call below if doesn't work
+def count_vowels(input_string, vowels):
 
-    for char in input_string:
-        if char in vowels: # TypeError: argument of type 'int' is not iterable
-           vowel_count += 1
+# Trying comprehension instead
+    vowel_counter = [char for char in input_string if char in vowels]
+    total_count = len(vowel_counter)
+    print(f"The total number of vowels is: {total_count}")
 
-total_vowel_count = count_vowels(input_string, vowel_count) # same TypeError here too
-
-print(f"The total number of vowels is: {total_vowel_count}")
+count_vowels(input_string, vowels)
