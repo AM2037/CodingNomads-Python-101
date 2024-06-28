@@ -17,6 +17,5 @@ def vowel_freq(input_string, vowels):
 
     return freq
 
-# frequency = vowel_freq(input_string, vowels)
 frequency = vowel_freq(input_string, freq)
 print(f"The total number of times each vowel appears is: {frequency}")
