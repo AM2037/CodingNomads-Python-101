@@ -21,12 +21,11 @@ for index in range(3):
     message = str(input("Please enter a word or phrase: "))
     # add response to list
     messages.append(message)
-    print(messages)
 
-def find_longest(message):
-    # Set length of messages as it's own variable
-    length = len(message)
-    if len(message).max(): # Still getting AttributeError
-        print(f"{length} + "," + {message}")
+def find_longest(messages):
+    # Find max length
+    longest = max(messages, key = len)
+    length_of_max = len(longest)
+    print(f"{length_of_max}, {longest}")
 
 find_longest(messages)
