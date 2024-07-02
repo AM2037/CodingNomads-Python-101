@@ -3,3 +3,6 @@
 # "January", "February", ... "December"
 # Print "Error" if the number from the user is not between 1 and 12.
 # Use a nested `if` statement.
+
+# Assigning month name to number using enumerate 
+mon_names = ['January', 'February', 'March', 'April',  'May',  'June',  'July',  'August',  'September',  'October',  'November',  'December']
