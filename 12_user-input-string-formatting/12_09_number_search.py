@@ -4,3 +4,15 @@
 
 # Prompt user for number within specified range
 num = int(input("Please enter a number between 0 and 1,000,000,000: "))
+
+# If user enters number:
+while True:
+    # and number is within range:
+    for i in range(0,1000000001):
+        # find and print number
+        num_search = num.find(i) # fix AttributeError
+        print(num_search)
+        break
+    else: 
+        print("Please enter valid number: ")
+        continue
