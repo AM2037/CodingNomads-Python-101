@@ -4,16 +4,13 @@
 
 # Prompt user for number within specified range
 num = int(input("Please enter a number between 0 and 1,000,000,000: "))
-
+start, stop = 0, 1000000001
 # Check if number in range
 while True:
-    if num not in range(0,1000000001):
+    if num not in range(start, stop):
         print(int(input("Please enter valid number: ")))
-    # If number in range
-    else: 
-        # Print number
+        break
+    if num in range(start, stop):
+        # If number in range, print number
         print(num)
         break
-
-# TODO: Works but repeating second prompt after entering valid number
-# in cases where user enters invalid number first -- handle
