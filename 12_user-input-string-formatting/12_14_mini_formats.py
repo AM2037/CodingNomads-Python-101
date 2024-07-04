@@ -7,4 +7,11 @@
 # 30 31 32 33 34 35 36 37 38 39
 # 40 41 42 43 44 45 46 47 48 49
 
-# TODO: Research string mini-language
+# Previous table's code from 11_10_range_table.py
+print(list(range(0,10)))
+print(list(range(10,20)))
+print(list(range(20,30)))
+print(list(range(30, 40)))
+print(list(range(40,50)))
+
+# Using python string mini-language to display it instead
