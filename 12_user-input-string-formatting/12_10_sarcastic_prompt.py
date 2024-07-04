@@ -7,3 +7,9 @@ then converts all the letters to lowercase for proper alternating caps.
 '''
 
 op = input("What do you honestly think about pinapple on pizza?").lower()
+
+# Using list comprehension to only capitalize every other letter in response
+sarcasm = "".join([char.upper() if i % 2 else char for i,char in enumerate(op)])
+
+# Print sarcastic style response
+print(sarcasm)
