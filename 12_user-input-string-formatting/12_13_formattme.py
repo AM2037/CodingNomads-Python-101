@@ -3,6 +3,7 @@
 # Then, change the that way you're displaying the multi-line string
 # so that the output doesn't show any superfluous spacing.
 
+# TODO: Fix me
 animal = None
 blurb = f"The {animal} (Felis {animal}us) is a domestic species of small \
         carnivorous mammal. It is the only domesti{animal}ed species \
