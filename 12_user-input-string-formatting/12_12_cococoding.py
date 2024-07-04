@@ -3,4 +3,5 @@
 
 
 # Use an operator and f-string formatting to create this output
-
+tab = '\t'
+print(f"{tab}Time for co-co-co-ding.")
